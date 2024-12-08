@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>price</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .box1 {
+            background-color: white;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            height: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 20px;
+        }
+
+        .box1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .box1::after, .box1::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient( red, orange, yellow, green, cyan, blue, purple, pink, red);
+            top:50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            opacity: 1;  /* Ensure they start visible */
+            transition: opacity ease;
+            visibility: visible;
+        }
+        .box1::before{
+            filter: blur(1.05rem);
+            opacity: 0.4;
+
+        }
+        .box1:hover::after, .box1:hover::before {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .list-items{
+            margin: 10px;
+            font-size: 12px;
+        }
+        .amount{
+            margin-top: 5px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 10px;
+            background-color: #05a39b;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            /* Slightly enlarge the button on hover */
+        }
+        .footer1 {
+            margin-top: 80vh;
+            max-width: 300vh;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .box1 {
+                width: 45%;
+                /* Adjust for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box1 {
+                width: 100%;
+                /* Stack the boxes on very small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Creative<span>Study</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading"> select the plan </h1>
+
+<!-- price section  -->
+
+<section class="price">
+
+    <div class="box1">
+        <h3>basic</h3>
+        <div class="amount"><span>$</span>20<span>/mo</span></div>
+        <ul>
+            <div class="list-items">certificates</div>
+            <div class="list-items">full courses</div>
+            <div class="list-items">full modules</div>
+            <div class="list-items">live projects</div>
+            <div class="list-items">24x7 support</div>
+        </ul>
+        <a href="#" class="btn">select plan</a>
+    </div>
+
+    <div class="box1">
+        <h3>standard</h3>
+        <div class="amount"><span>$</span>50<span>/mo</span></div>
+        <ul>
+            <div class="list-items">certificates</div>
+            <div class="list-items">full courses</div>
+            <div class="list-items">full modules</div>
+            <div class="list-items">live projects</div>
+            <div class="list-items">24x7 support</div>
+        </ul>
+        <a href="#" class="btn">select plan</a>
+    </div>
+
+    <div class="box1">
+        <h3>premium</h3>
+        <div class="amount"><span>$</span>90<span>/mo</span></div>
+        <ul>
+            <div class="list-items">certificates</div>
+            <div class="list-items">full courses</div>
+            <div class="list-items">full modules</div>
+            <div class="list-items">live projects</div>
+            <div class="list-items">24x7 support</div>
+        </ul>
+        <a href="#" class="btn">select plan</a>
+    </div>
+
+</section>
+</div>
+
+<!-- footer section  -->
+
+<div class="footer1">
+    <section class="footer">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>about us</h3>
+                <p>I am Ayushi from KIET group of institutions</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">course</a>
+                <a href="#">review</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact us</h3>
+               <p> <i class="fas fa-phone"></i> +91 7453820810 </p>
+               <p> <i class="fas fa-envelope"></i> ayushi7453gupta@gmail.com </p>
+               <p> <i class="fas fa-map-marker-alt"></i> Meerut, India - 250004</p>
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span> Ayushi Gupta </span> | all rights reserved </div>
+    
+    </section>
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

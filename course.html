@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .course {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px;
+
+        }
+        .heading{
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box1 {
+            background-color: white;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+
+        .amount {
+            font-size: 24px;
+            color: #05a39b;
+            font-weight: bold;
+        }
+
+        .stars i {
+            color: #f39c12;
+        }
+
+        .stars i.far {
+            color: #ddd;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 10px;
+            background-color: #05a39b;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            /* Slightly enlarge the button on hover */
+        }
+
+        .icons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .icons p {
+            margin: 5px 0;
+        }
+
+        .footer1 {
+            margin-top: 180vh;
+            max-width: 300vh;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .box1 {
+                width: 45%;
+                /* Adjust for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box1 {
+                width: 100%;
+                /* Stack the boxes on very small screens */
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <a href="#" class="logo">Creative<span>Study</span></a>
+
+            <div id="menu" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="course.html">course</a>
+                <a href="price.html">price</a>
+                <a href="review.html">review</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+        </header>
+
+        <h1 class="heading"> popular courses </h1>
+
+        <!-- course section  -->
+
+        <section class="course">
+
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-1.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+
+
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-5.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-6.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-1.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-1.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+            <div class="box1">
+                <span class="amount">$59.99</span>
+                <img src="images/course-1.svg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h3>front end development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus
+                    doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
+                <a href="#" class="btn">learn more</a>
+                <div class="icons">
+                    <p> <i class="far fa-clock"></i> 2 hours </p>
+                    <p> <i class="far fa-calendar"></i> 6 months </p>
+                    <p> <i class="fas fa-book"></i> 12 modules </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- footer section  -->
+
+    <div class="footer1">
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>I am Ayushi from KIET group of institutions</p>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">course</a>
+                    <a href="#">review</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact us</h3>
+                    <p> <i class="fas fa-phone"></i> +91 7453820810 </p>
+                    <p> <i class="fas fa-envelope"></i> ayushi7453gupta@gmail.com </p>
+                    <p> <i class="fas fa-map-marker-alt"></i> Meerut, India - 250004</p>
+                </div>
+
+            </div>
+
+            <div class="credit"> created by <span> Ayushi Gupta </span> | all rights reserved </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
